@@ -7,24 +7,24 @@ import java.util.List;
 import java.util.Optional;
 
 public interface MemberDao {
-    public int save(Member member);
 
-    public List<Member> findAll();
+  public int save(Member member);
 
-    //Alican
- //  public List<Vehicle> findAllVehicles();
+  public List<Member> findAll();
 
-    //Sercan
- //   public Optional<Member> findByNumberPlate(String numberPlate);
+  //Alican
+  //  public List<Vehicle> findAllVehicles();
 
-    //Muammer
- //   public List<String> findAllMembersName();
+  //Sercan
+  public Optional<Member> findByNumberPlate(String numberPlate);
 
-    //Zeynel
+  //Muammer
+  //   public List<String> findAllMembersName();
+
+  //Zeynel
   //  public Member UpdateByNumberPlate(String numberPlate);
 
-    //Filiz
-  //  public void DeleteByNumberPlate(String numberPlate);
+ // public void delete(Optional<Member> member);
 
-
+  public void deleteByNumberPlate(String numberPlate);
 }
